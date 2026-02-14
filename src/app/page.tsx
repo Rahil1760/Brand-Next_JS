@@ -50,7 +50,7 @@ export default function Home() {
       items: '120+ products'
     },
     {
-      name: 'Hoddies',
+      name: 'Hoodie',
       icon: <ShirtIcon size={48} className="text-red-600" />,
       description: 'Warm and stylish hoodies for cool days',
       items: '90+ products'
@@ -60,6 +60,12 @@ export default function Home() {
       icon: <Star size={48} className="text-pink-600" />,
       description: 'Trendy oversized t-shirts for street style',
       items: '75+ products'
+    },
+       {
+      name: 'All',
+      icon: <Star size={48} className="text-pink-600" />,
+      description: 'Browse all our products in one place',
+      items: '1000+ products'
     }
   ];
 

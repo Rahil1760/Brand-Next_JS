@@ -4,6 +4,7 @@ import { ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Modal } from "../Dialouge_Box/Modal";
+import Image from "next/image";
 const Navbar = () => {
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,8 +46,9 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-
-      <div className="flex-shrink-0 relative">
+         
+      <div className="flex-shrink-0 relative flex items-center gap-4">
+        <Image src="/brandLogo.jpeg" alt="Logo" width={32} height={32} className="rounded-full object-contain" />
         <button
           className="relative p-2 hover:bg-gray-100 rounded-full transition-colors"
           onClick={handleCart}
