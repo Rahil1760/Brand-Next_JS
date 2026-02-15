@@ -9,7 +9,8 @@ const connectMongoDB = async () => {
   }
 
   try {
-    const mongoUri = process.env.MONGODB_URI || "mongodb+srv://Rahil:Rahil@cluster0.i3gvz.mongodb.net/brand?retryWrites=true&w=majority&appName=Cluster0";
+    const mongoUri = process.env.MONGODB_URI 
+    // || "mongodb+srv://Rahil:Rahil@cluster0.i3gvz.mongodb.net/brand?retryWrites=true&w=majority&appName=Cluster0";
     if (!mongoUri) {
       throw new Error('MongoDB connection string (MONGODB_URI) is not defined in environment variables.');
     }
